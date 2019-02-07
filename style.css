@@ -1,0 +1,174 @@
+#game-board
+{   
+    flex-wrap: wrap;
+    margin-top: 25px;
+    margin: 30px auto;
+    border: 2px solid #00688B;
+    width: 100%;
+    border-collapse:border;
+ 
+}
+
+.grid-item
+{
+    text-align: center;
+    border: 1px solid #00688B;
+    width: 33.33%;
+    height: 0;
+    padding-bottom: 87px;
+    color: #00688B;
+    font-family: 'Nunito', sans-serif;
+    padding-top: 48px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.container
+{
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    width: 30%;
+}
+
+.result
+{
+    font-size: 40px;
+    font-weight: bold;
+    color:#00688B;
+    margin:auto;
+}
+
+h1
+{
+    color: #00688B;
+    text-align: center;
+    margin: auto;
+    font-size: 63px;
+}
+
+h2
+{
+    color: #00688B;
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+body
+{
+    background-color: #E0EEEE;
+}
+
+.blink {
+    animation: blink-animation 1s steps(5, start) infinite;
+    -webkit-animation: blink-animation 1s steps(5, start) infinite;
+  }
+  @keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+  @-webkit-keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+
+  .btns
+  {
+    padding: 10px 20px 10px 20px;
+ 
+    background-color: #E0EEEE;
+    border: 3px solid #00688B;
+    border-radius: 5px;
+    margin: 20px;
+    color: #00688B;
+    width:100%;
+    
+  }
+
+  .active
+  {
+      display:flex !important;
+  }
+
+  .hide
+  {
+      display:none;
+  }
+
+  .playerDetails
+  {
+     
+      color: #00688B;
+      font-size:20px;
+
+  }
+
+  .tableDisplay
+  {
+      display:table !important;
+  }
+
+  .playerDetails span
+  {
+     margin-right:20px;
+      
+  }
+
+  .playerOne, .playerTwo
+  {
+      display:table-row;
+  }
+
+  
+@media only screen and (max-width: 1600px) {	
+	.grid-item {
+		font-size: 40px;
+	}
+}
+
+@media only screen and (max-width: 1366px) {	
+	.container {
+		width: 40%;
+	}
+}
+
+@media only screen and (max-width: 964px) {	
+	.container {
+		width: 45%;
+	}
+	.grid-item {
+		font-size: 35px;
+	}
+}
+
+@media only screen and (max-width: 800px) {	
+	.container {
+		width: 60%;
+	}
+	.grid-item {
+		font-size: 30px;
+	}
+}
+
+@media only screen and (max-width: 414px) {	
+	.container {
+		width: 90%;
+	}
+}
+
+@media only screen and (max-width: 320px) {	
+	header {
+		margin-top: 0;
+	}
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
